@@ -22,8 +22,8 @@ export default {
   mounted() {
     var self = this;
     //../assets/logo.png
-   // self.axios.get("/assets/json/enunciado1.json").then((response) => {
-       axios.get("https://api.coindesk.com/v1/bpi/currentprice.json").then((response) => {
+   axios.get("/json/enunciado1.json").then((response) => {
+       //axios.get("https://api.coindesk.com/v1/bpi/currentprice.json").then((response) => {
       
       self.cuestionario = response.data;
     });
